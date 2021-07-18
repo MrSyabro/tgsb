@@ -1,0 +1,3 @@
+[submodule "components/tgbl"]
+	path = components/tgbl
+	url = syabroserver.lan:Projects/tgbl.git
