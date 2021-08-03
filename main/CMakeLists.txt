@@ -1,3 +1,3 @@
-idf_component_register(SRCS "main.c" "tgbl.c"
+idf_component_register(SRCS "main.c"
                     INCLUDE_DIRS "."
-                    EMBED_TXTFILES root_cert.pem)
+                    REQUIRES tgbl nvs_flash audio_pipeline audio_stream esp_peripherals)

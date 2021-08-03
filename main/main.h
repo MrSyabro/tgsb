@@ -2,6 +2,8 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
+#include "freertos/semphr.h"
+#include "freertos/queue.h"
 #include "esp_log.h"
 #include "esp_wifi.h"
 #include "nvs_flash.h"
@@ -33,12 +35,11 @@
 
 #ifndef MAIN_H
 #define MAIN_H
-static const char *tgbt = CONFIG_TGBT;
 audio_pipeline_handle_t pipeline;
 audio_element_handle_t http_stream_reader, i2s_stream_writer, mp3_decoder;
 
-void set_url(char *url);
+//void set_url(char *url);
 
-QueueHandle_t url_queue;
+//QueueHandle_t url_queue;
 #endif
 
